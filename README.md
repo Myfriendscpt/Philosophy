@@ -10,10 +10,10 @@ The multi-targeted Release DLLs and NuGet package have been installed on your Wi
 
 | Target Framework | DLL Path |
 | :--- | :--- |
-| **.NET 8.0 (LTS)** | `C:\Users\outsh\.dotnet\lib\Philosophy\net8.0\Philosophy.dll` |
-| **.NET 10.0** | `C:\Users\outsh\.dotnet\lib\Philosophy\net10.0\Philosophy.dll` |
-| **.NET 11.0** | `C:\Users\outsh\.dotnet\lib\Philosophy\net11.0\Philosophy.dll` |
-| **NuGet Package** | `C:\Users\outsh\.dotnet\packages\Philosophy.1.0.0.nupkg` |
+| **.NET 8.0 (LTS)** | dotnet\lib\Philosophy\net8.0\Philosophy.dll` |
+| **.NET 10.0** | .dotnet\lib\Philosophy\net10.0\Philosophy.dll` |
+| **.NET 11.0** | .dotnet\lib\Philosophy\net11.0\Philosophy.dll` |
+| **NuGet Package** | .dotnet\packages\Philosophy.1.0.0.nupkg` |
 
 ---
 
@@ -23,14 +23,14 @@ The multi-targeted Release DLLs and NuGet package have been installed on your Wi
 ```xml
 <ItemGroup>
   <Reference Include="Philosophy">
-    <HintPath>C:\Users\outsh\.dotnet\lib\Philosophy\net8.0\Philosophy.dll</HintPath>
+    <HintPath>\.dotnet\lib\Philosophy\net8.0\Philosophy.dll</HintPath>
   </Reference>
 </ItemGroup>
 ```
 
 ### Local NuGet Package Installation:
 ```powershell
-dotnet add package Philosophy --source C:\Users\outsh\.dotnet\packages
+dotnet add package Philosophy --source .dotnet\packages
 ```
 
 ---
@@ -103,7 +103,7 @@ DialecticStage<string> dialectic = new DialecticStage<string>.Synthesis(
 
 ## 4. Automated Z3 SMT Theorem Verification
 
-The library provides [`PhilosophyZ3`](file:///C:/Users/outsh/.gemini/antigravity/scratch/Philosophy/PhilosophyZ3.cs) which compiles all philosophical sorts into Z3 SMT-LIB2 syntax and verifies them against the installed Windows Z3 solver:
+The library provides [`PhilosophyZ3`] which compiles all philosophical sorts into Z3 SMT-LIB2 syntax and verifies them against the installed Windows Z3 solver:
 
 ```csharp
 using Philosophy.Z3;
