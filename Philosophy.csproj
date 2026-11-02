@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net10.0;net11.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PackageId>Philosophy</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>outsh</Authors>
+    <Company>Local</Company>
+    <Product>Philosophy</Product>
+    <Description>Unified Formal Philosophy and SMT Automated Reasoning Engine for .NET (Epistemics, Ethics, Modal Logic, Mereology, Dialectics)</Description>
+    <DefaultItemExcludes>$(DefaultItemExcludes);demo\**</DefaultItemExcludes>
+  </PropertyGroup>
+
+</Project>
+
